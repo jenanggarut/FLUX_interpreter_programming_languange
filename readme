@@ -25,7 +25,6 @@ Flux is a custom programming language implementation with its own lexer, parser,
 
 ## Project Structure
 
-```
 flux/
 ├── CMakeLists.txt           # Build configuration
 ├── examples/                # Example programs
@@ -46,7 +45,7 @@ flux/
     ├── test_lexer.cpp
     ├── test_parser.cpp
     └── test_vm.cpp
-```
+
 
 ## Building
 
@@ -118,5 +117,6 @@ The project is under development with basic functionality implemented:
 Contributions are welcome! Please feel free to submit pull requests.
 
 ## License
+
 
 [Add your chosen license here]
