@@ -1,0 +1,122 @@
+═══════════════════════════════════════════
+      ███████╗██╗     ██╗   ██╗██╗  ██╗    
+      ██╔════╝██║     ██║   ██║██║ ██╔╝    
+      █████╗  ██║     ██║   ██║█████╔╝     
+      ██╔══╝  ██║     ██║   ██║██╔═██╗     
+      ██║     ███████╗╚██████╔╝██║  ██╗    
+      ╚═╝     ╚══════╝ ╚═════╝ ╚═╝  ╚═╝    
+═══════════════════════════════════════════
+
+made by anak rj initial MWA
+
+
+# Flux Programming Language
+
+Flux is a custom programming language implementation with its own lexer, parser, compiler, and virtual machine.
+
+## Features
+
+- Custom syntax similar to C-style languages
+- Function declarations and calls
+- Built-in functions (`print`, `add`, `sub`)
+- REPL (Read-Eval-Print Loop) for interactive development
+- Bytecode compilation and VM execution
+- Basic semantic analysis
+
+## Project Structure
+
+```
+flux/
+├── CMakeLists.txt           # Build configuration
+├── examples/                # Example programs
+│   └── hello.my            # Hello world example
+├── include/                 # Public header files
+├── src/                    # Source code
+│   ├── ast.h              # Abstract Syntax Tree definitions
+│   ├── lexer.h/cpp        # Lexical analysis
+│   ├── parser.h/cpp       # Syntax parsing
+│   ├── semantic.h/cpp     # Semantic analysis
+│   ├── compiler.h/cpp     # Bytecode compilation
+│   ├── bytecode.h/cpp     # Bytecode representation
+│   ├── vm.h/cpp          # Virtual Machine
+│   ├── builtins.h/cpp    # Built-in functions
+│   ├── repl.h/cpp        # Interactive REPL
+│   └── main.cpp          # Main entry point
+└── tests/                # Test files
+    ├── test_lexer.cpp
+    ├── test_parser.cpp
+    └── test_vm.cpp
+```
+
+## Building
+
+Requires CMake 3.10+ and a C++17 compatible compiler.
+
+```bash
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
+
+## Usage
+
+### REPL Mode
+```bash
+./myinterpreter
+```
+
+### Run a File
+```bash
+./myinterpreter file.my
+```
+
+### Compile a File (Not fully implemented)
+```bash
+./myinterpreter file.my -o output
+```
+
+## Example Program
+
+```
+// hello.my
+func main() {
+    print("Hello World");
+}
+```
+
+## Language Features
+
+### Built-in Functions
+- `print`: Prints values to console
+- `add`: Adds numbers
+- `sub`: Subtracts numbers
+
+### Data Types
+- Numbers (integers)
+- Strings
+- Functions
+
+### Control Flow
+- Function declarations
+- Function calls
+
+## Development Status
+
+The project is under development with basic functionality implemented:
+- ✅ Lexical Analysis
+- ✅ Parsing
+- ✅ Semantic Analysis
+- ✅ Bytecode Generation
+- ✅ Virtual Machine
+- ✅ REPL
+- ❌ Full Compiler (planned)
+- ❌ Standard Library (planned)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit pull requests.
+
+## License
+
+[Add your chosen license here]
